@@ -1,0 +1,48 @@
+---
+formatter: markdown table
+header-from: main.tf
+content: |-
+  # Subnet 생성 모듈
+
+  이 모듈은 다수의 AWS Subnet 을 동시에 생성하도록 구성한 Terraform 모듈이다.  
+  각 모듈은 개별적으로 동작하도록 구성되어 있으며 필요한 경우 모듈간 리소스 정보를 이용하도록  
+  output 을 사용하여 ID 정보를 출력하도록 구성되어 있다.
+
+  ## Table of Contents
+
+  - [Overview][1]
+  - [Example Input][2]
+  - [Requirements][3]
+  - [Inputs][4]
+  - [Outputs][5]
+  - [Modules][6]
+  - [Resources][7]
+
+  ## Overview
+
+  {{ .Header }}
+
+  {{ .Requirements }}{{"\n"}}
+  {{ .Inputs }}{{"\n"}}
+  {{ .Outputs }}{{"\n"}}
+  {{ .Modules }}{{"\n"}}
+  {{ .Resources }}{{"\n"}}
+  [1]: #overview
+  [2]: #example-input
+  [3]: #requirements
+  [4]: #inputs
+  [5]: #outputs
+  [6]: #modules
+  [7]: #resources
+
+sort:
+  enabled: true
+output:
+  file: README.md
+  mode: replace
+  template: |-
+    {{ .Content }}{{"\n"}}
+settings:
+  indent: 2
+  read-comments: false
+  hide-empty: false
