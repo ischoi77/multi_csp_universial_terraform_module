@@ -1,3 +1,11 @@
+/*
+Title: Azure ResourceGroup module for large services
+Author: 최인석 (Inseok-Choi)
+contect: ischoi77@gmail.com, knight7711@naver.com
+Revision: 1.0 2025.03.13
+*/
+
+
 # Resource Group 생성시 기존 내용 확인하여 빠진 것만 생성 하도록 충돌 회피하는 resource_group 생성 모듈
 
 #######################################

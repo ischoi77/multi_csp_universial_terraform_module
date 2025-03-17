@@ -1,3 +1,11 @@
+/*
+Title: AWS VPC module for large services
+Author: 최인석 (Inseok-Choi)
+contect: ischoi77@gmail.com, knight7711@naver.com
+Revision: 1.0 2025.03.13
+*/
+
+
 resource "aws_vpc" "this" {
   for_each = var.vpcs
 
